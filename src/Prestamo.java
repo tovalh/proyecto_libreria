@@ -13,6 +13,9 @@ public class Prestamo {
         this.fechaDevolucion = fechaDevolucion;
     }
 
+    public Prestamo() {
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }

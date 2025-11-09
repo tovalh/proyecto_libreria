@@ -5,7 +5,7 @@ public class Libro
     String autor;
     Integer cantidad_biblioteca;
     Integer cantidad_disponible;
-    String Imagen;
+    String Imagen; // SOLO SE GUARDA LA RUTA DE LA IMAGEN
 
     public Libro(String isbn, String titulo, String autor, Integer cantidad_biblioteca, Integer cantidad_disponible, String imagen) {
         this.isbn = isbn;
@@ -14,6 +14,9 @@ public class Libro
         this.cantidad_biblioteca = cantidad_biblioteca;
         this.cantidad_disponible = cantidad_disponible;
         Imagen = imagen;
+    }
+
+    public Libro() {
     }
 
     public String getIsbn() {

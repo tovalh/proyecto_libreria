@@ -5,6 +5,18 @@ public class Usuario {
     private String carrera;
     private String prestamo;
 
+    public Usuario(String nombre_completo, String rut, char genero, String carrera) {
+        this.nombre_completo = nombre_completo;
+        this.rut = rut;
+        this.genero = genero;
+        this.carrera = carrera;
+        this.prestamo = "0";
+    }
+
+    public Usuario() {
+        this.prestamo = "0";
+    }
+
     public String getNombre_completo() {
         return nombre_completo;
     }
@@ -45,13 +57,13 @@ public class Usuario {
         this.prestamo = prestamo;
     }
 
-    public String validar_genero(char genero){
+    public boolean validar_genero(char genero){
         if(genero=='M'){
-            return "Masculino";
+            return true;
         } else if(genero=='F'){
-            return "Femenino";
+            return true;
         } else {
-            return "Invalido";
+            return false;
         }
     }
 }

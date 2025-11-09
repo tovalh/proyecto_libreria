@@ -2,7 +2,8 @@ public class Docente extends Usuario{
     private String profesion;
     private String grado;
 
-    public Docente(String profesion, String grado) {
+    public Docente(String nombre_completo, String rut, char genero, String carrera, String profesion, String grado) {
+        super(nombre_completo, rut, genero, carrera);
         this.profesion = profesion;
         this.grado = grado;
     }
