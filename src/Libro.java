@@ -1,11 +1,10 @@
-public class Libro
-{
+public class Libro {
     String isbn;
     String titulo;
     String autor;
     Integer cantidad_biblioteca;
     Integer cantidad_disponible;
-    String Imagen; // SOLO SE GUARDA LA RUTA DE LA IMAGEN
+    String imagen;
 
     public Libro(String isbn, String titulo, String autor, Integer cantidad_biblioteca, Integer cantidad_disponible, String imagen) {
         this.isbn = isbn;
@@ -13,7 +12,7 @@ public class Libro
         this.autor = autor;
         this.cantidad_biblioteca = cantidad_biblioteca;
         this.cantidad_disponible = cantidad_disponible;
-        Imagen = imagen;
+        this.imagen = imagen;
     }
 
     public Libro() {
@@ -56,15 +55,15 @@ public class Libro
     }
 
     public void setCantidad_disponible(Integer cantidad_disponible) {
-        cantidad_disponible = cantidad_disponible;
+        this.cantidad_disponible = cantidad_disponible;
     }
 
     public String getImagen() {
-        return Imagen;
+        return imagen;
     }
 
     public void setImagen(String imagen) {
-        Imagen = imagen;
+        this.imagen = imagen;
     }
 
     public boolean validar_cantidad_biblioteca(Integer cantidad_biblioteca){
@@ -82,5 +81,4 @@ public class Libro
         }
         return true;
     }
-
 }
