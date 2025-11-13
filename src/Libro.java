@@ -81,4 +81,16 @@ public class Libro {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "isbn='" + isbn + '\'' +
+                ", titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", cantidad_biblioteca=" + cantidad_biblioteca +
+                ", cantidad_disponible=" + cantidad_disponible +
+                ", imagen='" + imagen + '\'' +
+                '}';
+    }
 }

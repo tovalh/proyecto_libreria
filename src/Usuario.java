@@ -15,17 +15,37 @@ public class Usuario {
         this.prestamo = "0";
     }
 
-    public String getNombre_completo() { return nombre_completo; }
-    public void setNombre_completo(String nombre_completo) { this.nombre_completo = nombre_completo; }
+    public String getNombre_completo() {
+        return nombre_completo;
+    }
 
-    public String getRut() { return rut; }
-    public void setRut(String rut) { this.rut = rut; }
+    public void setNombre_completo(String nombre_completo) {
+        this.nombre_completo = nombre_completo;
+    }
 
-    public char getGenero() { return genero; }
-    public void setGenero(char genero) { this.genero = genero; }
+    public String getRut() {
+        return rut;
+    }
 
-    public String getPrestamo() { return prestamo; }
-    public void setPrestamo(String prestamo) { this.prestamo = prestamo; }
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public String getPrestamo() {
+        return prestamo;
+    }
+
+    public void setPrestamo(String prestamo) {
+        this.prestamo = prestamo;
+    }
 
     public boolean validar_genero(char genero) {
         return genero == 'M' || genero == 'F';
@@ -37,5 +57,15 @@ public class Usuario {
 
         String clean = rut.replace(".", "").trim().toUpperCase();
         return clean.matches("\\d{7,8}-[0-9K]");
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombre_completo='" + nombre_completo + '\'' +
+                ", rut='" + rut + '\'' +
+                ", genero=" + genero +
+                ", prestamo='" + prestamo + '\'' +
+                '}';
     }
 }

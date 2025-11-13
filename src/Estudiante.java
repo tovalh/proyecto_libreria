@@ -9,4 +9,11 @@ public class Estudiante extends Usuario {
 
     public String getCarrera() { return carrera; }
     public void setCarrera(String carrera) { this.carrera = carrera; }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" +
+                "carrera='" + carrera + '\'' +
+                '}';
+    }
 }

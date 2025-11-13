@@ -9,8 +9,27 @@ public class Docente extends Usuario {
         this.grado = grado;
     }
 
-    public String getProfesion() { return profesion; }
-    public void setProfesion(String profesion) { this.profesion = profesion; }
-    public String getGrado() { return grado; }
-    public void setGrado(String grado) { this.grado = grado; }
+    public String getProfesion() {
+        return profesion;
+    }
+
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
+    }
+
+    public String getGrado() {
+        return grado;
+    }
+
+    public void setGrado(String grado) {
+        this.grado = grado;
+    }
+
+    @Override
+    public String toString() {
+        return "Docente{" +
+                "profesion='" + profesion + '\'' +
+                ", grado='" + grado + '\'' +
+                '}';
+    }
 }

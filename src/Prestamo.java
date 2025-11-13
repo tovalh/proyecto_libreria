@@ -22,6 +22,18 @@ public class Prestamo {
     public Prestamo() {
     }
 
+    @Override
+    public String toString() {
+        return "Prestamo{" +
+                "usuario=" + usuario +
+                ", libro=" + libro +
+                ", fechaPrestamo='" + fechaPrestamo + '\'' +
+                ", diasPrestamo=" + diasPrestamo +
+                ", fechaDevolucion='" + fechaDevolucion + '\'' +
+                ", isbnLibro='" + isbnLibro + '\'' +
+                '}';
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }
